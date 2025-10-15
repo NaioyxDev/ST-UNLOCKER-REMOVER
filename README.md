@@ -1,13 +1,6 @@
 🚀 SteamUnlocker Remover
 <div align="center">
 
-https://img.shields.io/badge/version-1.0.0-red
-https://img.shields.io/badge/.NET-8.0-purple
-https://img.shields.io/badge/platform-Windows-blue
-https://img.shields.io/badge/license-MIT-green
-
-The ultimate weapon to clean Steam from unauthorized games
-
 Identify and terminate unauthorized games from your system
 </div>
 ⚡ Features
