@@ -5,7 +5,7 @@ Identify, clean, and protect your Steam library from unauthorized unlockers.
 “Purifying Steam, one game at a time.” 💀
 
 </div>
-## ⚡ Features
+##⚡ Features
 
 - 🔍 Automatic Scan of stplug-in .lua files
 
