@@ -5,26 +5,26 @@ Identify, clean, and protect your Steam library from unauthorized unlockers.
 “Purifying Steam, one game at a time.” 💀
 
 </div>
-⚡ Features
+## ⚡ Features
 
-🔍 Automatic Scan of stplug-in .lua files
+- 🔍 Automatic Scan of stplug-in .lua files
 
-🎯 Smart Game Identification via the official Steam API
+- 🎯 Smart Game Identification via the official Steam API
 
-🖼️ Visual Interface showing game icons and names
+- 🖼️ Visual Interface showing game icons and names
 
-💀 One-Click Removal of unauthorized game files
+- 💀 One-Click Removal of unauthorized game files
 
-🔄 Quick Steam Restart
+- 🔄 Quick Steam Restart
 
-🎨 Modern Dark Theme for a sleek user experience
+- 🎨 Modern Dark Theme for a sleek user experience
 
-📦 Installation
-🧩 Method 1 — Installer (Recommended)
+- 📦 Installation
+## 🧩 Method 1 — Installer (Recommended)
 
 - Download SteamUnlockerRemover_Setup.exe
 
-Run the installer
+## Run the installer
 
 - Choose your installation folder
 
@@ -32,7 +32,7 @@ Run the installer
 
 - Launch the app and start cleaning! 🚀
 
-💼 Method 2 — Portable Version
+## 💼 Method 2 — Portable Version
 
 - Download SteamUnlockerRemover.zip
 
@@ -40,8 +40,9 @@ Run the installer
 
 - Run SteamUnlockerRemover.exe
 
-🎮 How to Use
-🔍 Automatic Scan
+## 🎮 How to Use
+
+- 🔍 Automatic Scan
 
 - Click “SELECT STEAM.EXE”
 
@@ -51,7 +52,7 @@ Run the installer
 
 - Detected games appear with icons, names, and AppIDs
 
-💀 Game Removal
+## 💀 Game Removal
 
 - Click “TERMINATE” under a game to remove its .lua file
 
@@ -59,11 +60,10 @@ Run the installer
 
 - The list updates automatically
 
-🔄 Restart Steam
+## 🔄 Restart Steam
 
-Click “RESTART STEAM” to instantly relaunch the Steam client
+- Click “RESTART STEAM” to instantly relaunch the Steam client
 
-🛠️ Development
-🧱 Prerequisites
-
-.NET 8.0 SDK
+# 🛠️ Development
+- 🧱 Prerequisites
+[.NET 8.0](https://dotnet.microsoft.com/fr-fr/download/dotnet/thank-you/sdk-8.0.121-windows-x64-installer)
