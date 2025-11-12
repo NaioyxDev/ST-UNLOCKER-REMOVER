@@ -1,0 +1,14 @@
+{
+  "name": "steam-unlocker-remover",
+  "version": "1.0.0",
+  "description": "Electron-based utility to remove Steam unlocker traces with a modern UI.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.2.0"
+  }
+}

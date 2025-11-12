@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SteamUnlocker Remover</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="glow"></div>
+    <main class="app-shell">
+      <header>
+        <div>
+          <h1>SteamUnlocker <span>Remover</span></h1>
+          <p>Nettoyez instantanément les traces laissées par vos unlockers Steam.</p>
+        </div>
+        <div class="badge">Electron Edition</div>
+      </header>
+
+      <section class="card inputs">
+        <div class="field">
+          <label for="appIds">Identifiants Steam (AppID)</label>
+          <textarea
+            id="appIds"
+            placeholder="Ex: 12345, 67890 ou une AppID par ligne"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <div class="field">
+          <label for="steamPath">Chemin d'installation de Steam</label>
+          <div class="path-picker">
+            <input type="text" id="steamPath" placeholder="C:\\Program Files (x86)\\Steam" />
+            <button id="browse">Parcourir</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="card actions">
+        <button id="remove" class="danger">Supprimer les traces</button>
+        <button id="restart">Relancer Steam</button>
+      </section>
+
+      <section class="card log">
+        <div class="log-header">
+          <h2>Journal d'activité</h2>
+          <span id="statusLabel">Prêt</span>
+        </div>
+        <div id="logStream"></div>
+      </section>
+    </main>
+    <script src="renderer.js"></script>
+  </body>
+</html>
