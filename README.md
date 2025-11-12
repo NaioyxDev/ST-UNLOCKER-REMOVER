@@ -68,6 +68,4 @@ npm run lint
 - The Steam metadata API is public but rate-limited. Quick successive scans may momentarily return generic titles.
 - Restarting Steam relies on the Windows executable; on macOS/Linux the command is ignored.
 
-## 📄 License
-
-MIT — see the original repository for details.
+Made By Naioyx :
