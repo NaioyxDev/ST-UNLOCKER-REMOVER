@@ -1,157 +1,73 @@
-## :crossed_swords: SteamUnlocker Remover
-<div align="center">
+# ⚔️ SteamUnlocker Remover — Electron Edition
 
-Identify, clean, and protect your Steam library from unauthorized unlockers.
-“Purifying Steam, one game at a time.” :skull:
+SteamUnlocker Remover is a sleek Electron desktop app that helps you detect and delete Steam unlocker scripts from the `config/stplug-in` folder. Point it to your `steam.exe`, scan in seconds, and purge any suspicious `.lua` files while keeping full control over your library.
 
-</div>
-## :zap: Features
+## ✨ Highlights
 
-- :mag: Automatic Scan of stplug-in .lua files
+- 🔍 **Smart scanning** of the `stplug-in` directory for rogue unlocker scripts
+- 🧠 **Automatic Steam metadata lookup** for friendly game names, icons, and genres
+- 🧼 **One-click deletion** with status feedback and live refresh
+- 🔁 **Steam restart helper** to shut down and relaunch the client instantly
+- 🎨 **Modern glassmorphism UI** optimised for speed and clarity
 
-- :dart: Smart Game Identification via the official Steam API
+## 🚀 Getting started
 
-- :frame_photo: Visual Interface showing game icons and names
+### 1. Install dependencies
 
-- :skull: One-Click Removal of unauthorized game files
+```bash
+npm install
+```
 
-- :arrows_counterclockwise: Quick Steam Restart
+### 2. Launch the app
 
-- :art: Modern Dark Theme for a sleek user experience
+```bash
+npm start
+```
 
-- :package: Installation
-## :jigsaw: Method 1 — Installer (Recommended)
+The development build opens an Electron window with the renderer UI. Developer tools are enabled automatically for easier debugging.
 
-- Download SteamUnlockerRemover_Setup.exe
+## 🧭 Using the application
 
-## Run the installer
+1. Click **Browse** to locate your `steam.exe`. The path is stored securely in the Electron user-data directory.
+2. Hit **Scan stplug-in**. The app analyses `<Steam>\config\stplug-in` and lists every `.lua` file.
+3. Review the detected entries. Game names, covers, file size, and last modification date are all displayed.
+4. Press **Delete** next to any unwanted script. The list refreshes immediately after a successful removal.
+5. Use **Restart Steam** to trigger `steam.exe -shutdown` followed by a fresh launch.
 
-- Choose your installation folder
+> ℹ️ On first launch the app is idle until a Steam path is provided.
 
-- (Optional) Create a desktop shortcut
+## 🏗️ Project structure
 
-- Launch the app and start cleaning! :rocket:
+```
+steamunlocker-remover/
+├── package.json
+├── src/
+│   ├── main/
+│   │   ├── main.js         # Electron entry point
+│   │   └── preload.js      # Secure renderer bridge
+│   ├── renderer/
+│   │   ├── index.html      # UI layout
+│   │   ├── index.js        # Renderer logic
+│   │   └── styles.css      # Styling
+│   └── shared/
+│       └── steam.js        # Steam utilities (scan, delete, restart)
+└── .eslintrc.json
+```
 
-## :briefcase: Method 2 — Portable Version
+## 🧹 Linting
 
-- Download SteamUnlockerRemover.zip
+Run ESLint to keep the JavaScript tidy:
 
-- Extract it anywhere
+```bash
+npm run lint
+```
 
-- Run SteamUnlockerRemover.exe
+## ❗ Safety notes
 
-## :video_game: How to Use
+- Deleting files is irreversible—make sure each script is unwanted before confirming.
+- The Steam metadata API is public but rate-limited. Quick successive scans may momentarily return generic titles.
+- Restarting Steam relies on the Windows executable; on macOS/Linux the command is ignored.
 
-- :mag: Automatic Scan
+## 📄 License
 
-- Click “SELECT STEAM.EXE”
-
-- Choose your Steam executable
-
-- The app automatically scans your stplug-in folder
-
-- Detected games appear with icons, names, and AppIDs
-
-## :skull: Game Removal
-
-- Click “DELETE” under a game to remove its .lua file
-
-- Confirm deletion → success message displayed
-
-- The list updates automatically
-
-## :arrows_counterclockwise: Restart Steam
-
-- Click “RESTART STEAM” to instantly relaunch the Steam client
-
-## :tools: Development
-
-- :bricks: Prerequisites
-[.NET 8.0](https://dotnet.microsoft.com/fr-fr/download/dotnet/thank-you/sdk-8.0.121-windows-x64-installer)
-
-## :gear: Build Instructions
-
-# Clone the repository
-git clone https://github.com/Naioyx/SteamUnlocker-Remover.git
-
-cd "SteamUnlocker Remover"
-
-## :file_folder: Project Structure
-
-SteamUnlocker Remover/
-
-├── MainWindow.xaml          # User Interface
-
-├── MainWindow.xaml.cs       # Core Logic
-
-├── App.xaml                 # App Configuration
-
-├── SteamUnlockerRemover.csproj
-
-└── setup.iss                # Installer Script
-
-## :dart: Technical Details
-Game Detection
-
-    1. Scan folder Steam/config/stplug-in/
-
-    2. Extract AppIDs from .lua filenames
-
-    3. Query Steam API to get game information
-
-    4. Display with names, icons and AppIDs
-
-Safe Removal
-
-    1. Verification of file existence
-
-    2. Deletion of targeted .lua file
-
-    3. Real-time interface update
-
-## 💻 Supported Systems
-
-| Operating System | Supported |
-| :--------------: | :-------: |
-|   🪟 Windows 10  |     ✅     |
-|   🪟 Windows 11  |     ✅     |
-|  🪟 Windows 8.1  |     ✅     |
-|     🐧 Linux     |     ❌     |
-|     🍎 macOS     |     ❌     |
-
-## ⚠️ Warnings
-
-- ⚠️ Use at your own risk.
-- 💾 Always back up your data before running the tool.
-- 🚫 Never delete legitimate Steam system files.
-- 🔒 This application does not modify or affect legitimate games.
-
-## 🐛 Bug Reports
-
-If you encounter any issues:
-1. Join our [Discord Community](https://discord.gg/steamunlocker)
-2. Make sure Steam is properly installed
-3. Check that the stplug-in folder exists
-4. Provide the following information:
-   - Windows version
-   - Steam version
-   - Exact error message
-   - Screenshot (if possible)
-  
-## 📜 License
-
-Licensed under the MIT License.
-See the LICENSE file for details.
-
-## 👨‍💻 Developer
-
-Naioyx — creator of SteamUnlocker
-
-“Purifying Steam, one game at a time.”
-
-GitHub: [NaioyxDev](https://github.com/NaioyxDev)
-
-
-
-
-
+MIT — see the original repository for details.

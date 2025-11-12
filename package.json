@@ -1,0 +1,19 @@
+{
+  "name": "steamunlocker-remover",
+  "version": "2.0.0",
+  "description": "Electron application to detect and remove Steam unlocker scripts.",
+  "main": "src/main/main.js",
+  "scripts": {
+    "start": "electron .",
+    "lint": "eslint \"src/**/*.js\""
+  },
+  "author": "Naioyx",
+  "license": "MIT",
+  "dependencies": {
+    "electron-store": "^9.0.0"
+  },
+  "devDependencies": {
+    "electron": "^28.2.3",
+    "eslint": "^8.57.0"
+  }
+}
